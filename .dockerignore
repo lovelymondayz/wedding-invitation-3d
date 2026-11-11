@@ -1,0 +1,8 @@
+# Static single-page invitation — no build step.
+# Keep this in sync with what the Dockerfile COPYs.
+.dockerignore
+.git
+.gitignore
+.env
+*.log
+README.md

@@ -1,0 +1,13 @@
+services:
+  web:
+    container_name: wedding-invitation-3d
+    build: .
+    image: wedding-invitation-3d:latest
+    ports:
+      - "3012:80"
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
