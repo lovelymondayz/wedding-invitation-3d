@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -49,6 +49,8 @@
   .chapter{display:block;font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);font-weight:700}
   .card h2{font-family:'Playfair Display',serif;font-size:clamp(1.55rem,3.1vw,2.3rem);margin:.45rem 0 .65rem;line-height:1.15}
   .card p{line-height:1.65;font-size:clamp(.95rem,1.5vw,1.06rem);font-weight:500}
+  .card p.year{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(1.5rem,3vw,2.2rem);
+               line-height:1.1;margin-top:.15rem;color:var(--accent);opacity:.92}
 
   /* ---------- Details ---------- */
   .details{flex-direction:column;justify-content:space-between;align-items:center;text-align:center;padding:7vh 5vw 5vh}
@@ -90,62 +92,62 @@
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero-inner">
-      <p class="kicker rl">Together with their families</p>
+      <p class="kicker rl">Bersama kedua keluarga</p>
       <h1 class="names rl"><span data-bind="bride"></span> <span class="amp">&amp;</span> <span data-bind="groom"></span></h1>
-      <p class="sub rl">are getting married!</p>
-      <p class="scroll-cue rl">Scroll to see how it all began <span>↓</span></p>
+      <p class="sub rl">akan menikah!</p>
+      <p class="scroll-cue rl">Gulir untuk melihat awal ceritanya <span>↓</span></p>
     </div>
   </section>
 
   <!-- STORY -->
   <section class="panel left">
     <div class="card glass reveal">
-      <span class="chapter">Chapter One</span>
+      <span class="chapter">Babak Satu</span>
       <h2 data-bind="s1t"></h2>
-      <p data-bind="s1p"></p>
+      <p class="year" data-bind="s1p"></p>
     </div>
   </section>
   <section class="panel right">
     <div class="card glass reveal">
-      <span class="chapter">Chapter Two</span>
+      <span class="chapter">Babak Dua</span>
       <h2 data-bind="s2t"></h2>
-      <p data-bind="s2p"></p>
+      <p class="year" data-bind="s2p"></p>
     </div>
   </section>
   <section class="panel left">
     <div class="card glass reveal">
-      <span class="chapter">Chapter Three</span>
+      <span class="chapter">Babak Tiga</span>
       <h2 data-bind="s3t"></h2>
       <p data-bind="s3p"></p>
     </div>
   </section>
   <section class="panel right">
     <div class="card glass reveal">
-      <span class="chapter">Chapter Four</span>
+      <span class="chapter">Babak Empat</span>
       <h2 data-bind="s4t"></h2>
-      <p data-bind="s4p"></p>
+      <p class="year" data-bind="s4p"></p>
     </div>
   </section>
 
   <!-- DETAILS -->
   <section class="details" id="details">
     <div class="det-top reveal">
-      <p class="kicker">Join us for the wedding of</p>
+      <p class="kicker">Kami mengundang Anda untuk menghadiri pernikahan</p>
       <h2 class="names-sm"><span data-bind="bride"></span> <span class="amp">&amp;</span> <span data-bind="groom"></span></h2>
     </div>
     <div class="det-grid">
       <div class="det glass reveal">
-        <span class="label">Date</span>
+        <span class="label">Tanggal</span>
         <span class="big" data-bind="dateLong"></span>
         <span class="small" data-bind="dateYear"></span>
       </div>
       <div class="det glass reveal">
-        <span class="label">Time</span>
+        <span class="label">Waktu</span>
         <span class="big" data-bind="time"></span>
         <span class="small" data-bind="timeNote"></span>
       </div>
       <div class="det glass reveal">
-        <span class="label">Venue</span>
+        <span class="label">Tempat</span>
         <span class="big" data-bind="venue"></span>
         <span class="small" data-bind="address"></span>
       </div>
@@ -164,28 +166,28 @@
      EDIT YOUR DETAILS HERE
      ===================================================================== */
   const CONFIG = {
-    bride: 'Amelia',
-    groom: 'Julian',
-    dateLong: 'Saturday, June 12',
-    dateYear: '2027',
-    time: '4:00 PM',
-    timeNote: 'Ceremony followed by dinner & dancing',
-    venue: 'The Willow Garden Pavilion',
-    address: '88 Blossom Lane, Your City',
+    bride: 'Alifa',
+    groom: 'Exa',
+    dateLong: 'Sabtu, 5 Desember',
+    dateYear: '2026',
+    time: '08.00 & 11.00 WIB',
+    timeNote: 'Akad pukul 08.00 · Resepsi 11.00–14.00',
+    venue: 'Dharmein Hotel Jakarta',
+    address: 'Jl. Melawai VIII No. 6, Blok M, Kebayoran Baru, Jakarta Selatan',
 
-    s1t: 'A Little Hello',
-    s1p: 'It began with a glance across a crowded room, a shy wave, and a feeling that something very sweet was about to happen.',
-    s2t: 'The Coffee That Changed Everything',
-    s2p: 'One cup turned into three hours of talking. Somewhere between the first laugh and the last sip, the world got a lot smaller and a lot brighter.',
-    s3t: 'Adventures, Big & Small',
-    s3p: 'Road trips, rainy-day picnics, terrible dance moves and perfect sunsets. Every adventure was better with a partner in crime.',
-    s4t: 'One Knee, One Big Question',
-    s4p: 'A tiny ring, a very nervous speech, and one very enthusiastic yes. Now we are walking down the aisle, and we want you there.'
+    s1t: 'Awal Bertemu',
+    s1p: '2016',
+    s2t: 'Bersama',
+    s2p: '2017–2026',
+    s3t: 'Cerita Kami',
+    s3p: 'Dari pertemuan yang sederhana, percakapan yang terus berlanjut, hingga keyakinan bahwa kami ingin melangkah bersama dalam suka, usaha, dan doa yang sama. Kini dengan ridha Allah dan restu keluarga, kami memutuskan untuk menyatukan langkah dalam ikatan pernikahan.',
+    s4t: 'Menikah',
+    s4p: '5 Desember 2026'
   };
   /* ===================================================================== */
 
   document.querySelectorAll('[data-bind]').forEach(function (el) { el.textContent = CONFIG[el.dataset.bind] || ''; });
-  document.title = CONFIG.bride + ' & ' + CONFIG.groom + ' \u2014 Wedding Invitation';
+  document.title = CONFIG.bride + ' & ' + CONFIG.groom + ' \u2014 Undangan Pernikahan';
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -684,22 +686,22 @@
 
   tl.to(S, { skyT: 5, ease: 'none', duration: 5 }, 0);
 
-  // 0 -> 1  "A little hello": they step closer and notice each other
+  // 0 -> 1  "Awal Bertemu" (2016): they step closer and notice each other
   tl.to(S, { gap: 0.52, love: 0.5 }, 0)
     .to(S, { wave: 0, duration: 0.7 }, 0.1)
     .to(L, { ry: 1.1 }, 0).to(R, { ry: -1.1 }, 0);
 
-  // 1 -> 2  "Coffee date": face to face, heads tilt, she hops with joy
+  // 1 -> 2  "Bersama" (2017-2026): face to face, heads tilt, she hops with joy
   tl.to(S, { gap: 0.12, love: 0.9 }, 1)
     .to(L, { ry: 1.3, tilt: 0.1 }, 1).to(R, { ry: -1.3, tilt: 0.1 }, 1)
     .to(L, { hop: 0.8, duration: 0.22, ease: 'power2.out' }, 1.45)
     .to(L, { hop: 0, duration: 0.22, ease: 'power2.in' }, 1.67);
 
-  // 2 -> 3  "Adventures": they stroll across the meadow, she twirls
+  // 2 -> 3  "Cerita Kami": they stroll across the meadow, she twirls
   tl.to(S, { cx: 0.35, gap: 0.22, love: 0.15, zoom: 1.2 }, 2)
     .to(L, { ry: 0.7 + TAU, tilt: 0 }, 2).to(R, { ry: 0.7, tilt: 0 }, 2);
 
-  // 3 -> 4  "The question": back to centre, he kneels with the ring
+  // 3 -> 4  "Menikah" (5 Des 2026): back to centre, he kneels with the ring
   tl.to(S, { cx: 0, gap: 0.1, zoom: 0.3 }, 3)
     .to(S, { love: 1, duration: 0.8 }, 3.2)
     .to(L, { ry: 1.35 + TAU }, 3).to(R, { ry: -1.35 }, 3)
@@ -709,7 +711,7 @@
     .to(L, { hop: 0.6, duration: 0.15, ease: 'power2.out' }, 3.9)
     .to(L, { hop: 0, duration: 0.1, ease: 'power2.in' }, 4.05 - 0.05);
 
-  // 4 -> 5  "Yes!": hand in hand at the centre, hearts + confetti
+  // 4 -> 5  "Ya!": hand in hand at the centre, hearts + confetti
   tl.to(R, { kneel: 0, duration: 0.4 }, 4)
     .to(S, { gap: 0, duration: 0.8 }, 4)
     .to(S, { join: 1, duration: 0.7 }, 4.3)
